@@ -1,0 +1,356 @@
+@charset "utf-8";
+@import url('http://fonts.googleapis.com/css?family=Poppins:400,500,700');
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	color:#505962;
+}
+.offset:before{
+	height: 4.6rem;
+	margin-top: -4.6rem;
+	content: "";
+	display: block;
+}
+/* .container{
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+} */
+/*==================Navbar============*/
+.navbar{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background: rgba(117, 182, 182, 0.6)!important;
+}
+.navbar-brand img{
+	height: 3rem;
+	/* width: 25%;
+	margin: auto; */
+}
+.navbar-nav li{
+	padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: black;
+	padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #084885;
+}
+/*==================Slider============*/
+.carousel-item{
+	 
+	  width: 100%;
+      height:100vh;
+	  background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+	
+}
+.carousel-caption{
+	position: absolute;
+	top:38%;
+	text-transform: uppercase;
+	width: 100%;
+	right: 0;
+	left: 0;
+}
+.carousel-caption h1{
+	font-size: 3.8rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+}
+.carousel-caption h3{
+	font-size: 2rem;
+	text-shadow: .1rem .1rem .5rem black;
+	padding-bottom: 1.6rem;
+}
+.btn-lg{
+	border-width: medium;
+	border-radius: 0;
+	font-size: 1.1rem;
+}
+/*====================Course section==========*/
+.narrow{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+.btn-md{
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.1rem;
+	text-transform: uppercase;
+	margin: 1rem;
+}
+/*=================Portafolio===========*/
+.jumbotron{
+	border-radius: 0;
+	padding: 3rem 0 2rem;
+	margin-bottom: 0;
+}
+h3.heading{
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 1.9rem;
+}
+.heading-underline{
+	width: 3rem;
+	height: .2rem;
+	background-color: #506b67;
+	margin: 0 auto 2rem;
+}
+ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters > li{
+    list-style: none;
+    display: inline-block;
+}
+
+ul.filters > li > a{
+    display: block;
+    color: #434e5e;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+ul.filters > li > a:hover{
+    background-color: #e6e9ed;
+}
+
+ul.filters > li.active > a{
+    color: #fff;
+    background-color:#0789a6de;
+}
+
+.card{
+    position: relative;
+    margin-bottom: 50px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 1px 1px 1.5px rgba(0,0,0,0.075);
+}
+
+.card-head{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    /*background-color: rgba(67,78,94,0.8);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color :#000;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.card-hover{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 137, 166, 0.87);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.card-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4.title{
+    color: #434e5e;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.card-btn{
+    margin-bottom: -40px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #eee;
+    border-radius: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card-btn:hover{
+    background-color: rgba(7, 137, 166, 0.87);
+    color: #fff;
+}
+/*=========Clients==========*/
+.row{
+	margin: 1rem;
+}
+.clients img{
+	width: 100%;
+	border-radius: 50%;
+}
+blockquote .svg-inline--fa{
+	color: #1ebba3;
+	margin: 1rem;
+}
+.clients-hr{
+	border-top: .05rem solid #1ebba3;
+}
+
+/*===========location=======*/
+.map-container-6{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-6 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+.contenedor{
+    height: 550px;
+}
+/*=========Contact==========*/
+footer{
+	background-color: #40474e; 
+	color: white;
+	padding: 2rem 0 3rem;
+	margin-top: 1rem;
+}
+
+footer img{
+	height: 7rem;
+	margin: 1.5rem 0;
+}
+footer a{
+	color: white;
+}
+footer svg.svg-inline--fa{
+	font-size: 3rem;
+	margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover{
+	color: #1ebba3;
+}
+hr.socket{
+	border-top: .2rem solid #666b71;
+	width: 100%;
+}
+
+/*======Media Queries ======*/
+@media (max-width: 767px){
+	.carousel-caption h1{
+		font-size: 2.8rem;
+	    letter-spacing: .15rem;
+	    padding-bottom: .5rem;
+    }
+    .carousel-caption h3{
+		font-size: 1.2rem;
+		padding-bottom: 1.2rem;
+	}
+	.btn-lg{
+		font-size: 1rem;
+	}
+	.narrow h1{
+		font-size: 1.5rem;
+	}
+	p.lead{
+		font-size: 1rem;
+	}
+	.card-hover p{
+		font-size: 0.9rem;
+	}
+}
+/*Media Queries*/
+/* @media(max-width: 992px){
+	
+}
+@media(max-width: 768px){
+	
+}
+@media(max-width: 576px){
+	
+} */
+
+/*Firefox Bug Fix*/
+.carousel-item{
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+
+/*Fixed Background Image*/
+figure{
+	position: relative;
+	width: 100%;
+	height: 60%;
+	margin: 0!important;
+}
+.fixed-wrap{
+	clip: rect(0,auto,auto,0);
+	position: fixed;
+	display:block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#fixed{
+	background-image: url("../View/imagenes/imagene5.jpg");
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translatez(0);
+	        transform: translatez(0);
+	will-change: transform;
+}
+/*Bootstrap Padding Fix*/
+[class*="col-"]{
+	padding: 1rem;
+}
